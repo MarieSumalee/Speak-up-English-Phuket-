@@ -2,96 +2,142 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SpeakUp English Phuket | Real Confidence</title>
-  
+
+  <title>SpeakUp English Phuket | English Classes in Phuket</title>
+
+  <meta name="description" content="Fun and engaging English classes for kids, teens and adults in Phuket. Native teachers and real confidence.">
+  <meta property="og:title" content="SpeakUp English Phuket">
+  <meta property="og:description" content="Real English. Real Confidence. English classes in Phuket.">
+  <meta property="og:image" content="images/speakup-banner.jpg">
+  <meta property="og:type" content="website">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500&family=Outfit:wght@600;800&display=swap" rel="stylesheet">
-  
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-  <div class="language-switch">
-    <button onclick="switchLanguage('en')">EN</button>
-    <button onclick="switchLanguage('th')">ไทย</button>
-  </div>
+  <nav class="language-switch" aria-label="Language selection">
+    <button onclick="switchLanguage('en')" aria-label="Switch to English">EN</button>
+    <button onclick="switchLanguage('th')" aria-label="Switch to Thai">ไทย</button>
+  </nav>
 
-  <section class="hero">
-    <div class="container">
-      <div class="row align-items-center g-5">
-        <div class="col-lg-7">
-          <div class="logo-box mb-5">SpeakUp</div>
-          <div class="badge-tag">ENGLISH SCHOOL • PHUKET, THAILAND</div>
-          <h1 class="hero-title">
-            <span data-en="Real English." data-th="ภาษาอังกฤษจริง">Real English.</span><br>
-            <span class="text-terracotta" data-en="Real Confidence." data-th="ความมั่นใจจริง">Real Confidence.</span>
-          </h1>
-          <p class="hero-sub" data-en="Fun, engaging and effective English classes for kids, teens and adults in Phuket. Speak with confidence — from your first lesson." 
-             data-th="คลาสเรียนภาษาอังกฤษที่สนุก น่าสนใจ และได้ผล สำหรับเด็ก วัยรุ่น และผู้ใหญ่ในภูเก็ต">
-            Fun, engaging and effective English classes for kids, teens and adults in Phuket. Speak with confidence — from your first lesson.
-          </p>
-          <div class="hero-btns">
-            <a href="#booking" class="btn-main" data-en="Start Learning Today" data-th="เริ่มเรียนวันนี้">Start Learning Today</a>
-            <a href="#programs" class="btn-secondary" data-en="See Programs" data-th="ดูหลักสูตร">See Programs</a>
+  <main>
+    <section class="hero d-flex align-items-center">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7">
+            <div class="badge-tag">ENGLISH SCHOOL • PHUKET, THAILAND</div>
+            <h1 class="hero-title mb-3">
+              <span data-en="Real English." data-th="ภาษาอังกฤษจริง">Real English.</span><br>
+              <span class="text-terracotta" data-en="Real Confidence." data-th="ความมั่นใจจริง">Real Confidence.</span>
+            </h1>
+            <p class="hero-sub mb-4" data-en="Fun, engaging and effective English classes for kids, teens and adults in Phuket. Speak with confidence — from your first lesson." 
+               data-th="คลาสเรียนภาษาอังกฤษที่สนุก น่าสนใจ และได้ผล สำหรับเด็ก วัยรุ่น และผู้ใหญ่ในภูเก็ต พูดภาษาอังกฤษอย่างมั่นใจตั้งแต่บทเรียนแรก">
+              Fun, engaging and effective English classes for kids, teens and adults in Phuket. Speak with confidence — from your first lesson.
+            </p>
+            <div class="d-flex gap-3">
+              <a href="#booking" class="btn-main" data-en="Start Learning Today" data-th="เริ่มเรียนวันนี้">Start Learning Today</a>
+              <a href="#programs" class="btn-secondary" data-en="See Programs" data-th="ดูหลักสูตร">See Programs</a>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <img src="speakup-banner.jpg" alt="Students learning English" class="img-fluid rounded-5 shadow-lg">
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="container py-5" id="booking">
-    <h2 class="section-title text-center mb-2" data-en="Class Booking Schedule" data-th="ตารางเรียน">Class Booking Schedule</h2>
-    <p class="text-center mb-5" data-en="Choose your preferred class time." data-th="เลือกเวลาเรียนที่ท่านต้องการ">Choose your preferred class time.</p>
-    
-    <div class="table-responsive shadow-sm rounded-4">
-      <table class="table table-bordered text-center align-middle mb-0">
-        <thead class="table-dark">
-          <tr>
-            <th data-en="Time" data-th="เวลา">Time</th>
-            <th data-en="Monday" data-th="จันทร์">Monday</th>
-            <th data-en="Tuesday" data-th="อังคาร">Tuesday</th>
-            <th data-en="Wednesday" data-th="พุธ">Wednesday</th>
-            <th data-en="Thursday" data-th="พฤหัสบดี">Thursday</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="fw-bold">09:00 - 10:00</td>
-            <td data-en="Kids Class" data-th="คลาสเด็ก">Kids Class</td>
-            <td data-en="Private" data-th="เรียนส่วนตัว">Private</td>
-            <td data-en="Kids Class" data-th="คลาสเด็ก">Kids Class</td>
-            <td data-en="Private" data-th="เรียนส่วนตัว">Private</td>
-          </tr>
-          <tr>
-            <td class="fw-bold">13:00 - 14:00</td>
-            <td data-en="Teens Group" data-th="กลุ่มวัยรุ่น">Teens Group</td>
-            <td data-en="Adults English" data-th="ภาษาอังกฤษผู้ใหญ่">Adults English</td>
-            <td data-en="Teens Group" data-th="กลุ่มวัยรุ่น">Teens Group</td>
-            <td data-en="Adults English" data-th="ภาษาอังกฤษผู้ใหญ่">Adults English</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
+    <section class="py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-3">
+            <div class="feature-box">
+              <h5 data-en="Small Classes" data-th="ห้องเรียนขนาดเล็ก">Small Classes</h5>
+              <p data-en="3-5 students for better attention and faster results." data-th="นักเรียน 3-5 คน เพื่อผลลัพธ์ที่ดีกว่า">3-5 students for better attention and faster results.</p>
+            </div>
+          </div>
+          </div>
+      </div>
+    </section>
 
-  <section class="container py-5">
-    <div class="form-card mx-auto" style="max-width: 600px;">
-      <h2 class="section-title text-center mb-4" data-en="Book Your Trial Class" data-th="จองคลาสทดลองเรียน">Book Your Trial Class</h2>
-      <form id="bookingForm">
-        <input type="text" class="form-control custom-input" placeholder="Full Name" required>
-        <input type="tel" class="form-control custom-input" placeholder="Phone Number" required>
-        <select class="form-select custom-input">
-          <option>Select Program</option>
-          <option>Kids English</option>
-          <option>Adult English</option>
-        </select>
-        <button type="submit" class="btn-main w-100 mt-3" data-en="Submit Booking" data-th="ยืนยันการจอง">Submit Booking</button>
-      </form>
+    <section id="programs" class="py-5">
+      <div class="container">
+        <h2 class="section-title text-center mb-5" data-en="Programs For All Ages" data-th="หลักสูตรสำหรับทุกวัย">Programs For All Ages</h2>
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="program-card">
+              <h3 data-en="Kids 4-8" data-th="เด็กอายุ 4-8 ปี">Kids 4-8</h3>
+              <p class="fw-bold" data-en="SpeakUp Little Readers" data-th="โปรแกรมอ่านภาษาอังกฤษสำหรับเด็ก">SpeakUp Little Readers</p>
+              <ul class="list-unstyled">
+                <li data-en="✓ Phonics & Early Literacy" data-th="✓ โฟนิกส์เบื้องต้น">✓ Phonics & Early Literacy</li>
+                <li data-en="✓ Vocabulary & Reading" data-th="✓ คำศัพท์และการอ่าน">✓ Vocabulary & Reading</li>
+              </ul>
+            </div>
+          </div>
+          </div>
+      </div>
+    </section>
+
+    <section class="container py-5" id="booking">
+      <div class="booking-wrapper">
+        <div class="row g-5">
+          <div class="col-lg-4">
+            <div class="price-box h-100">
+              <h2 class="h3 mb-4" data-en="Pricing" data-th="ราคาเรียน">Pricing</h2>
+              <ul class="list-unstyled">
+                <li class="py-2 border-bottom" data-en="Kids — ฿450 / class" data-th="เด็ก — 450 บาท">Kids — ฿450 / class</li>
+                <li class="py-2 border-bottom" data-en="Teens — ฿500 / class" data-th="วัยรุ่น — 500 บาท">Teens — ฿500 / class</li>
+                <li class="py-2" data-en="Private — From ฿900 / hr" data-th="ส่วนตัว — เริ่มต้น 900 บาท">Private — From ฿900 / hr</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="booking-form">
+              <h2 class="h3 mb-4" data-en="Book a Trial Class" data-th="จองทดลองเรียน">Book a Trial Class</h2>
+              <form id="bookingForm">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <input type="text" class="form-control" id="name" placeholder="Full Name" required>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="tel" class="form-control" id="phone" placeholder="Phone Number" required>
+                  </div>
+                  <div class="col-12 text-center mt-4">
+                    <button type="submit" class="btn-main w-100">
+                      <span data-en="Submit Booking" data-th="ส่งข้อมูลการจอง">Submit Booking</span>
+                    </button>
+                  </div>
+                </div>
+              </form>
+              <div id="successMessage" class="alert alert-success mt-3 d-none">Successfully Sent!</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container py-5">
+      <section id="contact" class="contact-gradient text-center">
+        <h2 class="mb-4" data-en="Let's Start Your Journey" data-th="เริ่มต้นการเรียนรู้">Let's Start Your Journey</h2>
+        <a href="tel:0623355740" class="btn-main bg-white text-terracotta">Call: 062 335 5740</a>
+        <div class="mt-4 opacity-75">
+          <p>LINE: @speakupenglish.phuket</p>
+          <p>speakupenglish.phuket@gmail.com</p>
+        </div>
+      </section>
     </div>
-  </section>
+  </main>
+
+  <footer class="py-4 text-center">
+    <p>© 2025 SpeakUp English Phuket</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
